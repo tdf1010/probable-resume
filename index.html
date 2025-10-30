@@ -5,12 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Timothy D. Foster | IT Faculty Portfolio</title>
   <meta name="description" content="Timothy D. Foster - IT Instructor at Tohono O’odham Community College. AI, Cloud, Cybersecurity, Tribal IT Education." />
+  <meta name="theme-color" content="#1a1a1a" />
+  <meta property="og:title" content="Timothy D. Foster | IT Faculty Portfolio" />
+  <meta property="og:description" content="Timothy D. Foster - IT Instructor at Tohono O’odham Community College. AI, Cloud, Cybersecurity, Tribal IT Education." />
+  <meta property="og:type" content="website" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Timothy D. Foster",
+    "jobTitle": "IT Instructor",
+    "telephone": "tel:+19282214457",
+    "email": "mailto:tdf101@gmail.com",
+    "sameAs": [
+      "https://linkedin.com/in/timfoster2"
+    ]
+  }
+  </script>
   <style>
     :root {
-      --primary: #B8860B;
+      --primary: #7A1621;
+      --accent: #FFC72C;
       --dark: #1a1a1a;
-      --light: #f8f9fa;
+      --light: #ffffff;
       --gray: #6c757d;
     }
     * { margin:0; padding:0; box-sizing:border-box; }
@@ -32,20 +50,59 @@
     .btn { display:inline-block; background:var(--primary); color:white; padding:0.7rem 1.5rem; border-radius:6px; text-decoration:none; font-weight:600; margin-top:1rem; }
     .btn:hover { background:#9f7300; }
     footer { background:var(--dark); color:white; text-align:center; padding:2rem 0; font-size:0.9rem; }
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .skip-link:focus {
+      left: 10px;
+      top: 10px;
+      width: auto;
+      height: auto;
+      background: #fff;
+      color: var(--dark);
+      padding: 8px 12px;
+      border-radius: 4px;
+      z-index: 9999;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
     @media (max-width:768px) { nav ul { flex-direction:column; text-align:center; } }
   </style>
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header>
     <div class="container">
       <h1>Timothy D. Foster, M.A.</h1>
       <p>IT Instructor | AI & Cloud Educator | Tribal College Technology Leader</p>
-      <p>📞 928-221-4457 | ✉️ tdf101@gmail.com | 📍 Flagstaff, AZ</p>
+      <p>
+        <span aria-hidden="true">📞</span><span class="sr-only">Phone:</span>
+        <a href="tel:+19282214457" style="color:inherit; text-decoration:underline;">928-221-4457</a> |
+        <span aria-hidden="true">✉️</span><span class="sr-only">Email:</span>
+        <a href="mailto:tdf101@gmail.com" style="color:inherit; text-decoration:underline;">tdf101@gmail.com</a> |
+        <span aria-hidden="true">📍</span><span class="sr-only">Location:</span> Flagstaff, AZ
+      </p>
     </div>
   </header>
 
-  <nav>
+  <nav aria-label="Primary navigation">
     <div class="container">
       <ul>
         <li><a href="#teaching">Teaching</a></li>
@@ -57,96 +114,98 @@
     </div>
   </nav>
 
-  <section id="teaching">
-    <div class="container">
-      <h2>Teaching Philosophy</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Authentic Learning</h3>
-          <p>Students build real IT systems — AWS servers, secure networks, AI agents — not just theory.</p>
-        </div>
-        <div class="card">
-          <h3>Cultural Relevance</h3>
-          <p>Curriculum reflects <strong>Tohono O’odham values</strong>: T-Ḵi:k (community), I-We:mdag (respect).</p>
-        </div>
-        <div class="card">
-          <h3>Future-Ready Skills</h3>
-          <p>AI, Cloud, Cybersecurity, Automation — aligned with <strong>CompTIA, AWS, Azure</strong>.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="courses" style="background:#f1f1f1;">
-    <div class="container">
-      <h2>Courses Taught (AY 2024–2025)</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>CIS 250N – Coding Fundamentals</h3>
-          <p>Python + GitHub Copilot | AI-assisted coding | Ethical AI module</p>
-          <span class="badge">Fall 2024</span>
-        </div>
-        <div class="card">
-          <h3>CIS 210 – System Administration</h3>
-          <p>AWS Educate Labs | IAM, VPC, EC2 | Cloud deployment</p>
-          <span class="badge">Fall 2024</span>
-        </div>
-        <div class="card">
-          <h3>CIS 297 – IT Practicum</h3>
-          <p>3x TON IT internships | GitHub portfolio | 100% persistence</p>
-          <span class="badge">Online</span>
-        </div>
-        <div class="card">
-          <h3>CIS 280 – IT Project Management</h3>
-          <p>Agile + COBIT case studies from Lincoln College CTO role</p>
-          <span class="badge">Spring 2025</span>
+  <main id="main">
+    <section id="teaching">
+      <div class="container">
+        <h2>Teaching Philosophy</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Authentic Learning</h3>
+            <p>Students build real IT systems — AWS servers, secure networks, AI agents — not just theory.</p>
+          </div>
+          <div class="card">
+            <h3>Cultural Relevance</h3>
+            <p>Curriculum reflects <strong>Tohono O’odham values</strong>: T-Ḵi:k (community), I-We:mdag (respect).</p>
+          </div>
+          <div class="card">
+            <h3>Future-Ready Skills</h3>
+            <p>AI, Cloud, Cybersecurity, Automation — aligned with <strong>CompTIA, AWS, Azure</strong>.</p>
+          </div>
         </div>
       </div>
-      <a href="https://canvas.tocc.edu/templates/foster" class="btn" target="_blank">View Canvas Templates</a>
-    </div>
-  </section>
+    </section>
 
-  <section id="leadership">
-    <div class="container">
-      <h2>Leadership & Service</h2>
-      <ul style="list-style:none; padding-left:0;">
-        <li><strong>Chair, Curriculum Committee</strong> – Led CIS program revision (2024)</li>
-        <li><strong>Faculty Senate & Assessment Committee</strong> – Co-authored PLOs</li>
-        <li><strong>Canvas LMS Support Lead</strong> – Trained 18 faculty</li>
-        <li><strong>CIS Enrollment ↑40%</strong> since 2020</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="portfolio" style="background:#f1f1f1;">
-    <div class="container">
-      <h2>Student Work & Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>AWS Cloud Server Deployment</h3>
-          <p>Student: J. Lopez | CIS 210</p>
-          <a href="https://github.com/tdf101/cis210-demo" target="_blank" class="btn">View on GitHub</a>
+    <section id="courses" style="background:#f1f1f1;">
+      <div class="container">
+        <h2>Courses Taught (AY 2024–2025)</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>CIS 250N – Coding Fundamentals</h3>
+            <p>Python + GitHub Copilot | AI-assisted coding | Ethical AI module</p>
+            <span class="badge">Fall 2024</span>
+          </div>
+          <div class="card">
+            <h3>CIS 210 – System Administration</h3>
+            <p>AWS Educate Labs | IAM, VPC, EC2 | Cloud deployment</p>
+            <span class="badge">Fall 2024</span>
+          </div>
+          <div class="card">
+            <h3>CIS 297 – IT Practicum</h3>
+            <p>3x TON IT internships | GitHub portfolio | 100% persistence</p>
+            <span class="badge">Online</span>
+          </div>
+          <div class="card">
+            <h3>CIS 280 – IT Project Management</h3>
+            <p>Agile + COBIT case studies from Lincoln College CTO role</p>
+            <span class="badge">Spring 2025</span>
+          </div>
         </div>
-        <div class="card">
-          <h3>AI Ethics Policy (Group Project)</h3>
-          <p>CIS 250N | Fall 2024</p>
-          <a href="https://github.com/tdf101/ai-ethics" target="_blank" class="btn">View Repo</a>
+        <a href="https://canvas.tocc.edu/templates/foster" class="btn" target="_blank" rel="noopener noreferrer">View Canvas Templates</a>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <div class="container">
+        <h2>Leadership & Service</h2>
+        <ul style="list-style:none; padding-left:0;">
+          <li><strong>Chair, Curriculum Committee</strong> – Led CIS program revision (2024)</li>
+          <li><strong>Faculty Senate & Assessment Committee</strong> – Co-authored PLOs</li>
+          <li><strong>Canvas LMS Support Lead</strong> – Trained 18 faculty</li>
+          <li><strong>CIS Enrollment ↑40%</strong> since 2020</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="portfolio" style="background:#f1f1f1;">
+      <div class="container">
+        <h2>Student Work & Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>AWS Cloud Server Deployment</h3>
+            <p>Student: J. Lopez | CIS 210</p>
+            <a href="https://github.com/tdf101/cis210-demo" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
+          </div>
+          <div class="card">
+            <h3>AI Ethics Policy (Group Project)</h3>
+            <p>CIS 250N | Fall 2024</p>
+            <a href="https://github.com/tdf101/ai-ethics" target="_blank" rel="noopener noreferrer" class="btn">View Repo</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="resume">
-    <div class="container">
-      <h2>Professional Resume</h2>
-      <p><a href="https://grok.x.ai/generated/foster-resume-2025-v2.pdf" class="btn" target="_blank">Download PDF (2025)</a></p>
-      <p><a href="https://grok.x.ai/generated/foster-selfstudy-2025-v2.pdf" class="btn" target="_blank">Download Faculty Self-Study</a></p>
-    </div>
-  </section>
+    <section id="resume">
+      <div class="container">
+        <h2>Professional Resume</h2>
+        <p><a href="https://grok.x.ai/generated/foster-resume-2025-v2.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download PDF (2025)</a></p>
+        <p><a href="https://grok.x.ai/generated/foster-selfstudy-2025-v2.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download Faculty Self-Study</a></p>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Timothy D. Foster | <a href="https://linkedin.com/in/timfoster2" style="color:var(--primary);">LinkedIn</a> | Built with GitHub Pages</p>
+      <p>&copy; 2025 Timothy D. Foster | <a href="https://linkedin.com/in/timfoster2" style="color:var(--primary);" target="_blank" rel="noopener noreferrer">LinkedIn</a> | Built with GitHub Pages</p>
     </div>
   </footer>
 
